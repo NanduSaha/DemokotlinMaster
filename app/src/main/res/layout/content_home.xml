@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorDeepDeamWhite"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_home">
+
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            <include layout="@layout/toolbar_main"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_gravity="top"/>
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+            >
+
+
+                <androidx.viewpager.widget.ViewPager
+                        android:visibility="visible"
+                        android:id="@+id/viewpagerBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_230sdp">
+
+                </androidx.viewpager.widget.ViewPager>
+                <com.google.android.material.tabs.TabLayout
+                        android:visibility="visible"
+                        android:id="@+id/tab"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_30sdp"
+                        android:layout_marginLeft="@dimen/_30sdp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="@dimen/_65sdp"
+                        android:background="@drawable/dot_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="@dimen/_5sdp"
+                        app:tabBackground="@drawable/dot_selector"
+                        app:tabIndicatorColor="@color/colorTransparentBlack"
+                />
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_230sdp"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg_top_corner">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/layout_bg_top_corner"
+                    android:orientation="vertical">
+                <TextView
+                        android:id="@+id/tvweatherData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_12sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:gravity="center"/>
+                <LinearLayout
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height=".5dp"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:background="@color/colorText"
+                        android:layout_gravity="center"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvFeaturedProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:id="@+id/tvSeeAllCat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_12sdp"
+                        android:padding="@dimen/_5sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:gravity="center"/>
+                <LinearLayout
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height=".5dp"
+                        android:background="@color/colorText"
+                        android:layout_gravity="center"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvMainCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                >
+
+                </androidx.recyclerview.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>

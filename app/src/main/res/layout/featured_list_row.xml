@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="horizontal"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp">
+    <RelativeLayout
+            android:layout_width="@dimen/_120sdp"
+            android:layout_height="@dimen/_180sdp"
+            android:layout_margin="@dimen/_2sdp"
+            android:background="@color/colorWhite"
+    >
+
+
+        <RelativeLayout
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="match_parent"
+                android:id="@+id/llMain"
+        >
+            <LinearLayout
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:orientation="vertical"
+                    android:id="@+id/card_view"
+                    android:layout_marginTop="5dp"
+                    >
+                <ImageView
+                        android:id="@+id/ivItemImage"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:layout_marginBottom="5dp"
+                        android:padding="5dp"
+                />
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/card_view"
+                    android:paddingRight="@dimen/_2sdp"
+                    android:paddingLeft="@dimen/_2sdp"
+                    android:orientation="vertical">
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/_12sdp"
+                />
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:visibility="gone"
+                        android:id="@+id/tvCartId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorText"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:visibility="gone"
+                        android:id="@+id/tvProductId"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorText"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                />
+
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvItemPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:drawableLeft="@drawable/ic_rupee_indian"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/_12sdp"
+                />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

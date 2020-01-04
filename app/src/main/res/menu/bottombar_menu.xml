@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:background="@android:color/black"
+      app:bbn_badgeColor="@color/colorText"
+      app:bbn_rippleColor="#33ffffff"
+      app:bbn_itemColorActive="@color/colorPrimaryDark"
+      app:bbn_itemColorDisabled="#33ffffff"
+      app:bbn_itemColorInactive="#99ffffff"
+      >
+    <item
+            android:id="@+id/menu_home"
+            android:color="@color/colorWhite"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            />
+    <item
+            android:id="@+id/menu_category"
+            android:color="@color/colorWhite"
+            android:icon="@drawable/ic_list"
+            android:title="Category" />
+    <item
+            android:id="@+id/menu_order"
+            android:color="@color/colorWhite"
+            android:icon="@drawable/ic_my_order"
+            android:title="Order" />
+    <item
+            android:id="@+id/menu_more"
+            android:color="@color/colorWhite"
+            android:icon="@drawable/ic_more_button_interface_symbol_of_three_horizontal_aligned_dots"
+            android:title="More" />
+</menu>

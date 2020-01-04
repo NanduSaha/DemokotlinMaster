@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">DemoKotlin</string>
+    <string name="search_product">Search Product</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_category">Category</string>
+    <string name="nav_myaccount">My Account</string>
+    <string name="faq">FAQ</string>
+    <string name="prompt_registration">Registration</string>
+    <string name="prompt_login">Login</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="feature_product">Feature Product</string>
+    <string name="new_arrival">New Arrival Product</string>
+    <string name="hot_selling">Hot Selling Product</string>
+    <string name="other_product">Other Product</string>
+</resources>

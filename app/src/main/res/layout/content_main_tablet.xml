@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                                       xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:orientation="vertical"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:background="#ededed"
+                                       app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ededed"
+            android:layout_marginBottom="@dimen/_50sdp">
+
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical"
+                    android:id="@+id/login_layout"
+            >
+                <FrameLayout
+                        android:id="@+id/FRAGMENT_PLACEHOLDER"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150sdp">
+
+                    <androidx.viewpager.widget.ViewPager
+                            android:id="@+id/viewpagerBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_150sdp"
+                            android:visibility="visible">
+
+                    </androidx.viewpager.widget.ViewPager>
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/_5sdp"
+                            android:gravity="center"
+                            android:layout_gravity="bottom">
+                        <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                                android:id="@+id/dots_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                app:dampingRatio="0.5"
+                                app:dotsColor="#EEEAEA"
+                                app:dotsStrokeColor="#BDBBBB"
+                                app:dotsCornerRadius="10dp"
+                                app:dotsSize="8dp"
+                                app:dotsSpacing="6dp"
+                                app:dotsStrokeWidth="1dp"
+                                app:stiffness="300"
+                        />
+                    </LinearLayout>
+
+                </FrameLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/FRAGMENT_PLACEHOLDER"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/feature_product"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"
+                                android:textSize="@dimen/_12sdp"/>
+
+                        <Button android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:text="view all"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_broader"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvFeaturedProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/FRAGMENT_PLACEHOLDER"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/new_arrival"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"/>
+
+                        <Button android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:text="view all"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_broader"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvNewArrivalProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/FRAGMENT_PLACEHOLDER"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/hot_selling"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"/>
+
+                        <Button android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:text="view all"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_broader"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvHotSealingProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/FRAGMENT_PLACEHOLDER"
+                        android:padding="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/other_product"
+                                android:layout_centerVertical="true"
+                                android:layout_alignParentLeft="true"/>
+
+                        <Button android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_30sdp"
+                                android:layout_alignParentRight="true"
+                                android:text="view all"
+                                android:textColor="@color/colorPrimaryDark"
+                                android:textSize="@dimen/_10sdp"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/button_broader"/>
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvOtherProduct"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_10sdp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+    </FrameLayout>
+
+</androidx.core.widget.NestedScrollView>
